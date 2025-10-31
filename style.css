@@ -1,0 +1,202 @@
+body{
+    font-family:sans-serif;
+    margin:0;
+    padding:0;
+}
+header{
+    backgroud-color:#333;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+nav a{
+    margin:0 10px;
+    color:white;
+    tex-decoration:more;
+}
+section{
+    padding:40px 20px;
+}
+form input,form textarea{
+    display:block;
+    margin:10px 0;
+    width:100%;
+    max-width:400px;
+    padding:8px;
+}
+footer{
+    text-align:center;
+    padding:10px;
+    background:#333;
+    color:white;
+}
+/* Style the main navigation container */
+header nav {
+    background-color: #444; /* Slightly lighter dark gray for the nav background */
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Style the list containing the navigation links */
+header nav ul {
+    list-style: none; /* Removes the default bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Enables flexbox for horizontal alignment */
+    justify-content: center; /* Centers the links horizontally */
+}
+
+/* Style the individual list items */
+header nav ul li {
+    margin: 0 15px; /* Adds space between the links */
+}
+
+/* Style the navigation links themselves */
+header nav ul li a {
+    color: white; /* Ensures links are white on the dark background */
+    text-decoration: none; /* Removes the underline */
+    font-weight: bold;
+    text-transform: uppercase; /* Makes the text all caps */
+    padding: 5px 10px;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Add a hover effect for user feedback */
+header nav ul li a:hover {
+    color: #1E90FF; /* Changes color on hover (e.g., to a gold color) */
+}
+/* --- About Me Section Styles --- */
+#about {
+    /* Ensures space above and below the content */
+    padding: 40px 20px;
+    text-align: center; /* Centers the text within the section */
+}
+
+/* Style the About Me Heading */
+#about h2 {
+    color: #333; /* Dark gray color */
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Style the About Me Paragraph */
+#about p {
+    color: #555; /* Slightly lighter gray for body text */
+    font-size: 1.1em;
+    line-height: 1.6; /* Improves readability by adding space between lines */
+    max-width: 700px; /* Constrains the width for better reading flow */
+    margin: 0 auto; /* Centers the paragraph block */
+}
+/* --- Global Layout Container --- */
+.container {
+    max-width: 960px; /* Maximum width for your content */
+    margin: 0 auto; /* Centers the container block horizontally */
+    padding: 0 20px; /* Adds a small gap on the sides for small screens */
+}
+/* --- Global Section Heading Styling --- */
+section h2 {
+    font-size: 2.2em; /* Make them larger */
+    color: #333; /* Dark color */
+    text-align: center; /* Center them on the page */
+    padding-top: 30px; /* Space above the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    border-bottom: 2px solid #ccc; /* Add a subtle separator line */
+    padding-bottom: 5px;
+}
+/* --- Global Styles for the entire page --- */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Set a modern font stack */
+    background-color: #f8f8f8; /* Very light gray background */
+    color: #333; /* Default text color */
+    margin: 0;
+    padding: 0;
+}
+/* --- ACCENT COLOR CONSOLIDATION (Final Polish) --- */
+
+/* 1. Article List Accent (Vertical Border) */
+#article li {
+    /* Ensures the vertical line is the final brand color */
+    border-left: 3px solid #1E90FF; 
+}
+
+/* 2. Article Text Link Color (Permanent & Hover) */
+#article li a {
+    color: #1E90FF; /* Sets the default link text color */
+}
+
+#article li a:hover {
+    color: #0d79e5; /* A slightly darker blue for the hover effect */
+}
+
+/* 3. Navigation Links (Hover Effect) */
+header nav ul li a:hover {
+    color: #1E90FF; /* Sets the highlight color for menu links */
+}
+
+/* 4. Contact Form Button (Main Color & Hover) */
+#contact form button[type="submit"] {
+    background-color: #1E90FF; /* Sets the button background */
+    color: white; 
+}
+
+#contact form button[type="submit"]:hover {
+    background-color: #0d79e5; /* A slightly darker blue for the hover effect */
+}
+/* --- Media Query for Mobile Devices (Screen width less than 600px) --- */
+@media (max-width: 600px) {
+
+    /* 1. Stack the navigation links vertically */
+    header nav ul {
+        flex-direction: column; /* Change from horizontal to vertical */
+    }
+
+    /* 2. Give the links full width and remove side margins */
+    header nav ul li {
+        margin: 5px 0; /* Add vertical space instead of horizontal */
+        width: 100%;
+    }
+    
+    /* 3. Ensure the article list border is positioned correctly */
+    #article li {
+        padding-left: 5px; 
+    }
+}
+/* Target the main heading inside the header */
+header h1 {
+    color: #4CAF50; /* A nice shade of green */
+    /* You can add more styles here if needed, like font-size or text-align */
+}
+/* --- CSS Media Query for Mobile Devices (Screen width less than 600px) --- */
+@media (max-width: 600px) {
+
+    /* 1. Stack the navigation links vertically */
+    header nav ul {
+        flex-direction: column; /* Changes links from horizontal to vertical */
+    }
+
+    /* 2. Give the stacked links full width and add some space */
+    header nav ul li {
+        margin: 5px 0; 
+        padding: 5px 0;
+        width: 100%;
+        border-bottom: 1px solid #555; /* Add a line to separate links */
+    }
+
+    /* 3. Make the form inputs stack properly */
+    #contact form input, 
+    #contact form textarea {
+        max-width: 100%; /* Ensure inputs take full width of the container */
+    }
+    
+    /* 4. Adjust padding on sections for better use of small screen space */
+    section {
+        padding: 20px 10px; /* Reduce vertical and horizontal padding */
+    }
+    
+    /* 5. Center and size the main green title */
+    header h1 {
+        font-size: 1.5em; 
+        text-align: center;
+        padding-top: 10px;
+    }
+}
